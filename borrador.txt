@@ -1,0 +1,53 @@
+
+
+
+
+var contactos = new Array();
+
+
+
+function contacto(){
+   
+    this.nombre = '';
+    this.apellido = '';
+    this.telefono = '';
+    this.correo = '';
+    this.direccion = '';
+   
+
+}
+
+function agregarContacto(){
+
+      var addcontacto = new contacto();
+      
+       addcontacto.nombre = document.getElementById('txtNombre').value;
+       addcontacto.apellido = document.getElementById('txtApellido').value;
+       addcontacto.telefono = document.getElementById('txtTelefono').value;
+       addcontacto.correo = document.getElementById('txtCorreo').value;
+       addcontactodireccion = document.getElementById('txtDireccion').value;
+      
+       contactos[contactos.length] = addcontacto;
+        mostrarContactos();
+       contactos.push(addcontacto);
+       
+       
+    console.log(contactos);
+}
+
+function mostrarContactos(){
+    document.getElementById('todosContactos').innerHTML = '';
+    for (x=0; x<contactos.length; x++){
+        con = contactos[x];
+        div = document.createElement('div');
+        div.setAttribute('class', 'contactos');
+        div.innerHTML = 
+        addcontacto.nombre+"<br/>"
+        gi('todosContactos')
+
+        
+
+    }
+
+}
+

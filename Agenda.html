@@ -14,33 +14,29 @@
    
     <section    class="container flex text-center">
        
-        <div class="Columna">
+        <div id="Panel" class="Columna">
         <h2>Nombre</h2>
         <input type="text"  id="txtNombre">
-        </div>
-        <div class="Columna">
         <h2>Apellido</h2>
         <input type="text"  id="txtApellido"> 
-         </div>
-         <div class="Columna">
         <h2>Telefono</h2>
         <input type="text"  id="txtTelefono">  
-        </div> 
-        <div class="Columna">
         <h2>Correo</h2>
-        <input type="text"  id="txtCorreo">   
-        </div>
-        <div class="Columna">
+        <input type="text"  id="txtCorreo">  
         <h2>Direccion</h2>
         <input type="text"  id="txtDireccion">   
+        <button onclick="agregarContacto();">agregar</button> 
         </div> 
         
-        <button onclick="agregarContacto();">agregar</button>
+       
 
 </section>
+<fieldset>
+<legend>Contactos Agregados</legend>
+<div id="todosContactos">
 
-
-
+</div>
+</fieldset>
 
 </body>
 
